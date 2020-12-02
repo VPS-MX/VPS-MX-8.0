@@ -27,7 +27,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   -azu)cor="${MAG}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -verd)cor="${VERDE}${NEGRITO}" && echo -e "${cor}${2}${SEMCOR}";;
   -bra)cor="${VERMELHO}" && echo -ne "${cor}${2}${SEMCOR}";;
-  "-bar2"|"-bar")cor="${VERMELHO}======================================================" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
+  "-bar2"|"-bar")cor="${VERMELHO}————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
 ### PAQUETES PRINCIPALES 
@@ -164,13 +164,13 @@ clear
 msg -bar2
 echo -e "ESCOJER PRIMERO #All locales# Y LUEGO #en_US.UTF-8# " 
 sleep 7s
-export LANGUAGE=en_US.UTF-8\
-  && export LANG=en_US.UTF-8\
-  && export LC_ALL=en_US.UTF-8\
-  && export LC_CTYPE="en_US.UTF-8"\
-  && locale-gen en_US.UTF-8\
-  && sudo apt-get -y install language-pack-en-base\
-  && sudo dpkg-reconfigure locales
+# export LANGUAGE=en_US.UTF-8\
+  # && export LANG=en_US.UTF-8\
+  # && export LC_ALL=en_US.UTF-8\
+  # && export LC_CTYPE="en_US.UTF-8"\
+  # && locale-gen en_US.UTF-8\
+  # && sudo apt-get -y install language-pack-en-base\
+  # && sudo dpkg-reconfigure locales
 clear
 }
 msg -bar2
