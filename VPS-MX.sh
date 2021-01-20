@@ -403,3 +403,4 @@ else
 invalid_key
 fi
 rm -rf VPS-MX.sh
+exit
