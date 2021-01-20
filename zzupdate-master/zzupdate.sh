@@ -215,3 +215,4 @@ msg -bar2
 sleep 7s
 clear
 VPS-MX
+exit
