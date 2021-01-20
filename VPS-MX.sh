@@ -248,6 +248,7 @@ echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
 echo -e "\033[1;41m                     sudo menu                        \033[0;37m" && msg -bar2
 sleep 5
+exit
 }
 ofus () {
 unset server
@@ -402,5 +403,5 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
 else
 invalid_key
 fi
-rm -rf VPS-MX.sh
-exit
+rm -rf VPS-MX
+
