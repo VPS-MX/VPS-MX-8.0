@@ -14,7 +14,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
   "-bar2"|"-bar")cor="${VERMELHO}————————————————————————————————————————————————————" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
-rm -rf instalscript.sh
+rm -rf /usr/bin/VPS-MX
+rm -rf /VPS-Mx
 ## Script name
 SCRIPT_NAME=vpsmxup
 
